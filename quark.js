@@ -21,4 +21,13 @@ function quickCreateElement(className, insertAfterNode = null, attributes = null
 function deleteFromArray(array, index) {
     array.splice(index, 1)
 }
-module.exports = [insertAfter,setAttributes,quickCreateElement,deleteFromArray]
+function bomb(element, radius) {
+    const prev = ".previousSibling";
+    const next = ".nextSibling";
+    for (let i = 0; i < radius; i++) {
+        eval(`element${prev}.remove();`);
+        eval(`element${next}.remove();`);
+    }
+    element.remove();
+}
+module.exports = [insertAfter, setAttributes, quickCreateElement, deleteFromArray, bomb]
