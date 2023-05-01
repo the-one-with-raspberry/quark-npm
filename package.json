@@ -4,7 +4,7 @@
   "description": "A quark is a small thing. This is a collection of small things that will make coding much easier. Inspired by the Minecraft Quark mod.",
   "main": "quark.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/the-one-with-raspberry/quark.js/issues"
   },
-  "homepage": "https://github.com/the-one-with-raspberry/quark.js#readme"
+  "homepage": "https://github.com/the-one-with-raspberry/quark.js#readme",
+  "dependencies": {
+    "@berriz44/quark": "^1.0.1"
+  }
 }

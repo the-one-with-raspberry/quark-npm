@@ -22,6 +22,7 @@ function deleteFromArray(array, index) {
     array.splice(index, 1)
 }
 function bomb(element, radius) {
+    radius = radius + 1
     const prev = ".previousSibling";
     const next = ".nextSibling";
     for (let i = 0; i < radius; i++) {
